@@ -53,7 +53,7 @@ docs/
 
 GitHubへのpushとサイト公開は別の操作です。GitHub Pagesの有効化・公開は、明示的な指示を受けた後に実施します。
 
-1. 公開する本文と設定を確認します。変更があれば`main`ブランチにコミットしてGitHubへpushします。
+1. `main`から作成したローカルの`codex/作業内容`ブランチで変更し、作業ブランチはpushしません。リリースの指示を受けたら、本文・画像・設定などの差分全体を点検し、公開可能な変更を`git merge --squash`で`main`へ取り込んで1件の公開用コミットにまとめます。既存の未pushコミットがある場合は、それらも公開対象として確認します。GitHubへのpushは、pushの明示的な指示を受けてから実施します。
 2. GitHubリポジトリの **Settings → Pages → Build and deployment** を開きます。
 3. **Source**を **Deploy from a branch** に設定します。
 4. **Branch**を **main**、フォルダーを **/docs** に設定して **Save** します。
@@ -62,6 +62,8 @@ GitHubへのpushとサイト公開は別の操作です。GitHub Pagesの有効�
 公開元は **mainブランチのdocs/** です。有効化後は公開元へのpushにより自動で再公開されます。`.nojekyll`は追加しないでください。
 
 詳細は[GitHub公式の公開元設定手順](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)を参照してください。
+
+ブランチ運用の詳細は`AGENTS.md`に記載しています。squashは途中のコミット履歴をmainに持ち込まないための操作であり、最終ファイルから非公開情報を除去するものではありません。機密情報や非公開の原稿・素材はGitに記録しないでください。
 
 ## 確認方法
 
