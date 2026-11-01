@@ -9,3 +9,6 @@
 **/.jekyll-cache/
 **/.jekyll-metadata
 **/.sass-cache/
+
+# 原稿・素材の受け渡し用（ローカルに保持）
+/codex-input/

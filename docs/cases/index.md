@@ -10,4 +10,10 @@ permalink: /cases/
 
 ## 実績
 
-［公開可能な実績の見出し・課題・自身の役割・技術的な判断・結果を記入］
+### [5年分の日次バッチ検証の効率化]({{ '/cases/daily-batch-validation/' | relative_url }})
+
+検証方針と実行方法を見直し、従来ペースでは約2年半を要する規模の検証を、2名体制で約3週間で完了。
+
+**関連技術：** Spring Batch / AWS / Shell Script / SQL / Excel
+
+[取り組みの詳細を読む]({{ '/cases/daily-batch-validation/' | relative_url }})

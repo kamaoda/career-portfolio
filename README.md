@@ -17,6 +17,11 @@ docs/
   index.md                トップページ
   about.md                職務経歴・技術スタック
   cases/index.md          実績一覧
+  cases/daily-batch-validation.md  日次バッチ検証のケーススタディ
+  assets/images/daily-batch-validation-flow.png  提供された業務フロー比較図
+  assets/css/case-study.css  詳細ページ専用の表示調整
+  _layouts/case-study.html 詳細ページ用レイアウト（Minimalを継承）
+  _includes/head-custom.html  詳細ページ専用CSSの読み込み
   principles/index.md     開発に対する考え方一覧
 ```
 
@@ -60,7 +65,7 @@ GitHubへのpushとサイト公開は別の操作です。GitHub Pagesの有効�
 
 ## 確認方法
 
-公開前には、4ページのfront matter、見出し、内部リンク、および`url`・`baseurl`を確認します。GitHub上のMarkdownプレビューではLiquidリンクは変換されないため、リンク動作の確認にはJekyllのビルド結果を使用します。
+公開前には、各ページのfront matter、見出し、内部リンク、および`url`・`baseurl`を確認します。GitHub上のMarkdownプレビューではLiquidリンクは変換されないため、リンク動作の確認にはJekyllのビルド結果を使用します。
 
 ### ローカル環境の準備（Ubuntu / WSL）
 
@@ -111,13 +116,25 @@ bundle exec jekyll serve --source docs --destination _site --config docs/_config
 bundle exec jekyll serve --source docs --destination _site --config docs/_config.yml,_config.local.yml --host 127.0.0.1 --baseurl /career-portfolio
 ```
 
-`http://localhost:4000/career-portfolio/`から4ページのナビゲーションを確認します。`/career-portfolio`は実際のリポジトリ名に合わせて変更してください。
+`http://localhost:4000/career-portfolio/`から各ページのナビゲーションを確認します。`/career-portfolio`は実際のリポジトリ名に合わせて変更してください。
 
 公開後は、次のURL（プロジェクトサイトの例）から相互に移動できることを確認します。
 
 - `https://USERNAME.github.io/REPOSITORY/`
 - `https://USERNAME.github.io/REPOSITORY/about/`
 - `https://USERNAME.github.io/REPOSITORY/cases/`
+- `https://USERNAME.github.io/REPOSITORY/cases/daily-batch-validation/`
 - `https://USERNAME.github.io/REPOSITORY/principles/`
 
-ブラウザーの「ページのソースを表示」、または`curl -L <ページURL>`で、各ページの見出しと本文がHTMLに含まれることも確認してください。ローカルの生成物では`_site/index.html`、`_site/about/index.html`、`_site/cases/index.html`、`_site/principles/index.html`が対象です。
+ブラウザーの「ページのソースを表示」、または`curl -L <ページURL>`で、各ページの見出しと本文がHTMLに含まれることも確認してください。ローカルの生成物では`_site/index.html`、`_site/about/index.html`、`_site/cases/index.html`、`_site/cases/daily-batch-validation/index.html`、`_site/principles/index.html`が対象です。
+
+### ケーススタディの確認
+
+最初の事例は`/cases/daily-batch-validation/`です。`codex-input/`の提供原稿とPNGをもとに、本文と画像を`docs/`へ配置しています。入力ファイル自体は公開元の外にあり、`codex-input/`はGit管理対象外としてローカルに保持します。掲載内容は`docs/`で管理します。
+
+- 実績一覧から詳細へ移動し、末尾のリンクで一覧へ戻れることを確認します。
+- 冒頭の概要に続いて比較図が表示され、図または「比較図を原寸で開く・拡大する」から元のPNGを開けることを確認します。小さな画面では開いた画像をブラウザーで拡大できます。
+- PCとスマートフォンの幅で、見出し・表・画像が横にはみ出さず、画像の縦横比が保たれることを確認します。
+- `baseurl`が空の場合と`/career-portfolio`の場合の両方で、一覧・詳細・画像・CSSへのリンクを確認します。
+
+詳細ページだけに専用CSSを読み込み、既存ページにはMinimalテーマのスタイルをそのまま適用します。公開方式は引き続きmainブランチの`docs/`です。
