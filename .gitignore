@@ -1,0 +1,11 @@
+# ローカルのRuby・gem・Bundler設定
+/.local/
+/.bundle/
+/vendor/bundle/
+
+# Jekyll生成物
+/_site/
+/docs/_site/
+**/.jekyll-cache/
+**/.jekyll-metadata
+**/.sass-cache/
