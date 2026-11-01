@@ -96,7 +96,7 @@ bundle install
 
 ### ビルドとプレビュー
 
-`_config.local.yml`を重ねて、ローカルではテーマのGitHubリポジトリ情報の参照を抑えます。GitHubの認証情報は不要です。このファイルは`docs/`の外にあるため公開時には使用されません。
+`_config.local.yml`を重ねて、ローカルではテーマのGitHubリポジトリ情報の参照を抑えます。GitHubの認証情報は不要です。WSLのWindowsドライブ上での編集検知に対応するため、ローカルでは`force_polling: true`で定期的にファイル変更を確認します。このファイルは`docs/`の外にあるため公開時には使用されません。
 
 ```sh
 bundle exec jekyll build --source docs --destination _site --config docs/_config.yml,_config.local.yml --strict_front_matter

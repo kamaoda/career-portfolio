@@ -1,3 +1,6 @@
 # ローカルでのみ docs/_config.yml に重ねる。GitHub Pagesの公開対象外。
 # GitHub Metadataの自動取得を無効にし、リポジトリ未設定でも描画する。
 github: [metadata]
+
+# WSLのWindowsドライブ上での編集も検知できるよう、定期的に変更を確認する。
+force_polling: true
