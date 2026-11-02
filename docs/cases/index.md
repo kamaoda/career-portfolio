@@ -17,3 +17,11 @@ permalink: /cases/
 **関連技術：** Spring Batch / AWS / Shell Script / SQL / Excel
 
 [取り組みの詳細を読む]({{ '/cases/daily-batch-validation/' | relative_url }})
+
+### [複雑な保険契約変更に対応する外部連携バッチの設計・実装]({{ '/cases/insurance-contract-integration/' | relative_url }})
+
+契約情報と外部連携の結果をDBに保持し、その時点で必要な処理をSQLで導出する設計・実装と、複数年分の日次処理をローカルで自動検証する仕組みを構築。
+
+**関連技術：** Java / Spring Batch / PostgreSQL / SQL / JUnit / DbUnit / LocalStack / Excel VBA
+
+[取り組みの詳細を読む]({{ '/cases/insurance-contract-integration/' | relative_url }})
