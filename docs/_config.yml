@@ -4,8 +4,8 @@ lang: ja
 theme: jekyll-theme-minimal
 show_downloads: false
 
-# 公開前に設定する。例: https://USERNAME.github.io
-url: ""
+# GitHub Pagesの公開先。
+url: "https://kamaoda.github.io"
 # プロジェクトサイトは /REPOSITORY、ユーザーサイトや独自ドメインは空文字。
 # 末尾に / は付けない。
-baseurl: ""
+baseurl: "/career-portfolio"

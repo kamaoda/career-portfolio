@@ -43,6 +43,8 @@ docs/
 
 ## 公開前の設定
 
+このリポジトリの公開URLは https://kamaoda.github.io/career-portfolio/ です。公開元は `main` ブランチの `docs/`、`url` は `https://kamaoda.github.io`、`baseurl` は `/career-portfolio` に設定しています。
+
 `docs/_config.yml`の`url`と`baseurl`を実際の公開先に合わせます。以下の`USERNAME`と`REPOSITORY`は説明用のプレースホルダーです。
 
 | 公開先 | `url` | `baseurl` |
