@@ -24,3 +24,4 @@ SIerを顧客とするSES企業で、主にJavaを中心とした業務システ
 
 - [5年分の日次バッチ検証の効率化]({{ '/cases/daily-batch-validation/' | relative_url }})
 - [複雑な保険契約変更に対応する外部連携バッチの設計・実装]({{ '/cases/insurance-contract-integration/' | relative_url }})
+- [既存の勤怠管理SaaSを活用した残業・有給計算の自動化]({{ '/cases/attendance-automation/' | relative_url }})

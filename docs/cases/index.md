@@ -25,3 +25,11 @@ permalink: /cases/
 **関連技術：** Java / Spring Batch / PostgreSQL / SQL / JUnit / DbUnit / LocalStack / Excel VBA
 
 [取り組みの詳細を読む]({{ '/cases/insurance-contract-integration/' | relative_url }})
+
+### [既存の勤怠管理SaaSを活用した残業・有給計算の自動化]({{ '/cases/attendance-automation/' | relative_url }})
+
+新規アプリの開発を求められたが、既存SaaSと業務ルールを見直し、約50人分の勤怠集計を一括処理できる仕組みを実現した事例。
+
+**関連技術：** 勤怠管理SaaS / CSV / Excel関数 / 条件付き書式
+
+[取り組みの詳細を読む]({{ '/cases/attendance-automation/' | relative_url }})

@@ -19,8 +19,10 @@ docs/
   cases/index.md          実績一覧
   cases/daily-batch-validation.md  日次バッチ検証のケーススタディ
   cases/insurance-contract-integration.md  外部連携バッチのケーススタディ
+  cases/attendance-automation.md  勤怠集計自動化のケーススタディ
   assets/images/daily-batch-validation-flow.png  提供された業務フロー比較図
   assets/images/insurance-contract-integration-*.png  外部連携バッチの概念図2枚
+  assets/images/attendance-*.svg  勤怠集計の業務フロー・Excel設計構成図
   assets/css/case-study.css  詳細ページ専用の表示調整
   _layouts/case-study.html 詳細ページ用レイアウト（Minimalを継承）
   _includes/head-custom.html  詳細ページ専用CSSの読み込み
@@ -129,16 +131,18 @@ bundle exec jekyll serve --source docs --destination _site --config docs/_config
 - `https://USERNAME.github.io/REPOSITORY/cases/`
 - `https://USERNAME.github.io/REPOSITORY/cases/daily-batch-validation/`
 - `https://USERNAME.github.io/REPOSITORY/cases/insurance-contract-integration/`
+- `https://USERNAME.github.io/REPOSITORY/cases/attendance-automation/`
 - `https://USERNAME.github.io/REPOSITORY/principles/`
 
-ブラウザーの「ページのソースを表示」、または`curl -L <ページURL>`で、各ページの見出しと本文がHTMLに含まれることも確認してください。ローカルの生成物では`_site/index.html`、`_site/about/index.html`、`_site/cases/index.html`、`_site/cases/daily-batch-validation/index.html`、`_site/cases/insurance-contract-integration/index.html`、`_site/principles/index.html`が対象です。
+ブラウザーの「ページのソースを表示」、または`curl -L <ページURL>`で、各ページの見出しと本文がHTMLに含まれることも確認してください。ローカルの生成物では`_site/index.html`、`_site/about/index.html`、`_site/cases/index.html`、`_site/cases/daily-batch-validation/index.html`、`_site/cases/insurance-contract-integration/index.html`、`_site/cases/attendance-automation/index.html`、`_site/principles/index.html`が対象です。
 
 ### ケーススタディの確認
 
-事例①は`/cases/daily-batch-validation/`、事例②は`/cases/insurance-contract-integration/`です。`codex-input/`の提供原稿とPNGをもとに、本文と画像を`docs/`へ配置しています。入力ファイル自体は公開元の外にあり、`codex-input/`はGit管理対象外としてローカルに保持します。掲載内容は`docs/`で管理します。
+事例①は`/cases/daily-batch-validation/`、事例②は`/cases/insurance-contract-integration/`、事例③は`/cases/attendance-automation/`です。`codex-input/`の提供原稿とPNG・SVGをもとに、本文と画像を`docs/`へ配置しています。入力ファイル自体は公開元の外にあり、`codex-input/`はGit管理対象外としてローカルに保持します。掲載内容は`docs/`で管理します。
 
-- トップ・実績一覧から両方の詳細へ移動し、末尾のリンクで一覧へ戻れることを確認します。
-- 事例①は概要の後に比較図、事例②は「設計方針」にBefore / After図、「ローカル自動テスト」に構成図が表示されることを確認します。図または各図の「原寸で開く・拡大する」リンクから元のPNGを開けることを確認します。小さな画面では開いた画像をブラウザーで拡大できます。
+- トップ・実績一覧から3件の詳細へ移動し、末尾のリンクで一覧へ戻れることを確認します。
+- 事例①は概要の後に比較図、事例②は「設計方針」にBefore / After図、「ローカル自動テスト」に構成図が表示されることを確認します。図または各図の「原寸で開く・拡大する」リンクから元の画像を開けることを確認します。小さな画面では開いた画像をブラウザーで拡大できます。
+- 事例③は「従来の業務フロー」の説明直後に比較図、「全社員分を一括計算するExcelを設計」に構成図をSVGで表示します。図内の製品名は公開原稿の匿名化方針に合わせて「勤怠管理SaaS」に一般化しています。図と拡大リンクからSVGを開き、日本語・記号・翌月への残高引き継ぎを確認します。
 - PCとスマートフォンの幅で、見出し・表・画像が横にはみ出さず、画像の縦横比が保たれることを確認します。
 - `baseurl`が空の場合と`/career-portfolio`の場合の両方で、一覧・詳細・画像・CSSへのリンクを確認します。
 
