@@ -7,7 +7,7 @@ permalink: /cases/insurance-contract-integration/
 
 # 複雑な保険契約変更に対応する外部連携バッチの設計・実装
 
-[トップ]({{ '/' | relative_url }}) · [職務経歴・技術スタック]({{ '/about/' | relative_url }}) · [実績一覧]({{ '/cases/' | relative_url }}) · [開発に対する考え方]({{ '/principles/' | relative_url }})
+[トップ]({{ '/' | relative_url }}) · [職務経歴]({{ '/about/' | relative_url }}) · [技術スタック]({{ '/skills/' | relative_url }}) · [実績一覧]({{ '/cases/' | relative_url }}) · [開発に対する考え方]({{ '/principles/' | relative_url }})
 
 > **入力パターンごとに処理を定義するのではなく、DBに蓄積された情報から次に必要な処理を導出する方式へ転換した事例**
 

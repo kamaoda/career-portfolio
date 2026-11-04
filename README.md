@@ -15,7 +15,8 @@ _config.local.yml         ローカル専用の設定（公開対象外）
 docs/
   _config.yml             Jekyll設定
   index.md                トップページ
-  about.md                職務経歴・技術スタック
+  about.md                職務経歴
+  skills/index.md         技術スタック
   cases/index.md          実績一覧
   cases/daily-batch-validation.md  日次バッチ検証のケーススタディ
   cases/insurance-contract-integration.md  外部連携バッチのケーススタディ
@@ -31,14 +32,14 @@ docs/
 
 ## コンテンツの編集
 
-各ページの［ ］内を、本人が確認した公開可能な情報に置き換えます。雛形には職務経験・成果・数値・技術スタックの具体例を含めていません。守秘義務に関わる情報や第三者の非公開情報は記載しないでください。
+プレースホルダーの［ ］内を、本人が確認した公開可能な情報に置き換えます。技術スタックの掲載内容は `docs/skills/index.md` で管理します。守秘義務に関わる情報や第三者の非公開情報は記載しないでください。
 
 ページ先頭のYAML front matter（`---`で囲まれた部分）を保持してください。`title`はページのタイトル、`permalink`は公開URLのパスです。本文は見出しと文章を中心に記述し、リンクには内容が分かる名前を付けます。
 
 内部リンクは、公開パスを補うJekyllの[`relative_url`](https://jekyllrb.com/docs/liquid/filters/)フィルターを使用します。例:
 
 ```liquid
-[職務経歴・技術スタック]({{ '/about/' | relative_url }})
+[職務経歴]({{ '/about/' | relative_url }})
 ```
 
 ## 公開前の設定
@@ -130,13 +131,14 @@ bundle exec jekyll serve --source docs --destination _site --config docs/_config
 
 - `https://USERNAME.github.io/REPOSITORY/`
 - `https://USERNAME.github.io/REPOSITORY/about/`
+- `https://USERNAME.github.io/REPOSITORY/skills/`
 - `https://USERNAME.github.io/REPOSITORY/cases/`
 - `https://USERNAME.github.io/REPOSITORY/cases/daily-batch-validation/`
 - `https://USERNAME.github.io/REPOSITORY/cases/insurance-contract-integration/`
 - `https://USERNAME.github.io/REPOSITORY/cases/attendance-automation/`
 - `https://USERNAME.github.io/REPOSITORY/principles/`
 
-ブラウザーの「ページのソースを表示」、または`curl -L <ページURL>`で、各ページの見出しと本文がHTMLに含まれることも確認してください。ローカルの生成物では`_site/index.html`、`_site/about/index.html`、`_site/cases/index.html`、`_site/cases/daily-batch-validation/index.html`、`_site/cases/insurance-contract-integration/index.html`、`_site/cases/attendance-automation/index.html`、`_site/principles/index.html`が対象です。
+ブラウザーの「ページのソースを表示」、または`curl -L <ページURL>`で、各ページの見出しと本文がHTMLに含まれることも確認してください。ローカルの生成物では`_site/index.html`、`_site/about/index.html`、`_site/skills/index.html`、`_site/cases/index.html`、`_site/cases/daily-batch-validation/index.html`、`_site/cases/insurance-contract-integration/index.html`、`_site/cases/attendance-automation/index.html`、`_site/principles/index.html`が対象です。
 
 ### ケーススタディの確認
 

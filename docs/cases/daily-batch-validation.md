@@ -6,7 +6,7 @@ permalink: /cases/daily-batch-validation/
 
 # 5年分の日次バッチ検証の効率化
 
-[トップ]({{ '/' | relative_url }}) · [職務経歴・技術スタック]({{ '/about/' | relative_url }}) · [実績一覧]({{ '/cases/' | relative_url }}) · [開発に対する考え方]({{ '/principles/' | relative_url }})
+[トップ]({{ '/' | relative_url }}) · [職務経歴]({{ '/about/' | relative_url }}) · [技術スタック]({{ '/skills/' | relative_url }}) · [実績一覧]({{ '/cases/' | relative_url }}) · [開発に対する考え方]({{ '/principles/' | relative_url }})
 
 > **検証の目的に立ち返り、確認対象・実行方法・証跡作成の手順を見直した事例**
 
