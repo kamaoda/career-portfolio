@@ -66,6 +66,29 @@ div.wrapper {
   font-size: 18px;
 }
 
+.case-card {
+  padding: 16px clamp(12px, 3vw, 20px);
+  border: 1px solid #d5dbe1;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.case-card + .case-card {
+  margin-top: 16px;
+}
+
+.wrapper > main .case-card > h3 {
+  margin-top: 0;
+}
+
+.case-card > p {
+  margin: 0 0 12px;
+}
+
+.case-card > p:last-child {
+  margin-bottom: 0;
+}
+
 .wrapper > footer {
   padding-top: 16px;
   border-top: 1px solid #e5e5e5;
