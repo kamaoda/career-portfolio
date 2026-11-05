@@ -25,8 +25,10 @@ docs/
   assets/images/insurance-contract-integration-*.png  外部連携バッチの概念図2枚
   assets/images/attendance-*.svg  勤怠集計の業務フロー・Excel設計構成図
   assets/css/case-study.css  詳細ページ専用の表示調整
-  _layouts/case-study.html 詳細ページ用レイアウト（Minimalを継承）
-  _includes/head-custom.html  詳細ページ専用CSSの読み込み
+  assets/css/site.css     共通ヘッダー・1列レイアウト・本文見出しの表示調整
+  _layouts/default.html   Minimalをベースにした共通レイアウト
+  _layouts/case-study.html 詳細ページ用レイアウト（defaultを継承）
+  _includes/head-custom.html  共通CSSと詳細ページ専用CSSの読み込み
   principles/index.md     開発に対する考え方一覧
 ```
 
@@ -35,6 +37,8 @@ docs/
 プレースホルダーの［ ］内を、本人が確認した公開可能な情報に置き換えます。技術スタックの掲載内容は `docs/skills/index.md` で管理します。守秘義務に関わる情報や第三者の非公開情報は記載しないでください。
 
 ページ先頭のYAML front matter（`---`で囲まれた部分）を保持してください。`title`はページのタイトル、`permalink`は公開URLのパスです。本文は見出しと文章を中心に記述し、リンクには内容が分かる名前を付けます。
+
+共通ヘッダーのナビゲーションは `docs/_layouts/default.html` で管理します。実績の詳細ページへは実績一覧から移動できます。
 
 内部リンクは、公開パスを補うJekyllの[`relative_url`](https://jekyllrb.com/docs/liquid/filters/)フィルターを使用します。例:
 
@@ -150,4 +154,4 @@ bundle exec jekyll serve --source docs --destination _site --config docs/_config
 - PCとスマートフォンの幅で、見出し・表・画像が横にはみ出さず、画像の縦横比が保たれることを確認します。
 - `baseurl`が空の場合と`/career-portfolio`の場合の両方で、一覧・詳細・画像・CSSへのリンクを確認します。
 
-詳細ページだけに専用CSSを読み込み、既存ページにはMinimalテーマのスタイルをそのまま適用します。公開方式は引き続きmainブランチの`docs/`です。
+全ページでMinimalテーマのスタイルに共通CSSを重ね、詳細ページには専用CSSも読み込みます。公開方式は引き続きmainブランチの`docs/`です。

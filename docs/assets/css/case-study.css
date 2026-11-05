@@ -1,10 +1,4 @@
 /* 詳細ページだけに読み込み、Minimalテーマの構成・配色を引き継ぐ。 */
-@media screen and (min-width: 961px) {
-  .wrapper { width: auto; max-width: 1160px; }
-  header, footer { width: 230px; }
-  section { width: calc(100% - 280px); }
-}
-
 .case-study {
   color: #444;
   font-size: 16px;
@@ -12,9 +6,6 @@
   overflow-wrap: anywhere;
 }
 
-.case-study h1, .case-study h2, .case-study h3 { line-height: 1.5; }
-.case-study h2 { margin-top: 2em; }
-.case-study h3 { margin-top: 1.5em; }
 .case-study li + li { margin-top: 0.5em; }
 .case-study th, .case-study td { vertical-align: top; }
 .case-study th:first-child, .case-study td:first-child { width: 6em; }

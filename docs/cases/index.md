@@ -6,8 +6,6 @@ permalink: /cases/
 
 # 実績一覧
 
-[トップ]({{ '/' | relative_url }}) · [職務経歴]({{ '/about/' | relative_url }}) · [技術スタック]({{ '/skills/' | relative_url }}) · [実績一覧]({{ '/cases/' | relative_url }}) · [開発に対する考え方]({{ '/principles/' | relative_url }})
-
 ## 実績
 
 ### [5年分の日次バッチ検証の効率化]({{ '/cases/daily-batch-validation/' | relative_url }})

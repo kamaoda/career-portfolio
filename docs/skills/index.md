@@ -6,8 +6,6 @@ permalink: /skills/
 
 # 技術スタック
 
-[トップ]({{ '/' | relative_url }}) · [職務経歴]({{ '/about/' | relative_url }}) · [技術スタック]({{ '/skills/' | relative_url }}) · [実績一覧]({{ '/cases/' | relative_url }}) · [開発に対する考え方]({{ '/principles/' | relative_url }})
-
 Java・SpringとSQL・RDBを中心に、業務システムの開発に携わってきました。
 
 特に得意としているのは、**業務要件をデータモデル・SQL・Javaの処理に落とし込み、一体として設計・実装すること**です。
