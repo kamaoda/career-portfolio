@@ -1,0 +1,9 @@
+<nav class="site-nav" aria-label="主要ページ">
+  <ul>
+    <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>トップ</a></li>
+    <li><a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>職務経歴</a></li>
+    <li><a href="{{ '/skills/' | relative_url }}"{% if page.url == '/skills/' %} aria-current="page"{% endif %}>技術スタック</a></li>
+    <li><a href="{{ '/cases/' | relative_url }}"{% if page.url == '/cases/' %} aria-current="page"{% endif %}>実績一覧</a></li>
+    <li><a href="{{ '/principles/' | relative_url }}"{% if page.url == '/principles/' %} aria-current="page"{% endif %}>開発に対する考え方</a></li>
+  </ul>
+</nav>

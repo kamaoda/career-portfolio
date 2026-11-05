@@ -29,6 +29,7 @@ docs/
   _layouts/default.html   Minimalをベースにした共通レイアウト
   _layouts/case-study.html 詳細ページ用レイアウト（defaultを継承）
   _includes/head-custom.html  共通CSSと詳細ページ専用CSSの読み込み
+  _includes/site-nav.html  ヘッダーとフッターで共用するリンク集
   principles/index.md     開発に対する考え方一覧
 ```
 
@@ -38,7 +39,7 @@ docs/
 
 ページ先頭のYAML front matter（`---`で囲まれた部分）を保持してください。`title`はページのタイトル、`permalink`は公開URLのパスです。本文は見出しと文章を中心に記述し、リンクには内容が分かる名前を付けます。
 
-共通ヘッダーのナビゲーションは `docs/_layouts/default.html` で管理します。実績の詳細ページへは実績一覧から移動できます。
+ヘッダーとフッターのナビゲーションは `docs/_includes/site-nav.html` でまとめて管理します。実績の詳細ページへは実績一覧から移動できます。
 
 内部リンクは、公開パスを補うJekyllの[`relative_url`](https://jekyllrb.com/docs/liquid/filters/)フィルターを使用します。例:
 
